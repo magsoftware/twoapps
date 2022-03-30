@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Headers</h1>
+    <table border="0">
+        <tr>
+            <th align="left">Header</th>
+            <th align="left">Value</th>
+        </tr>
+    {% for key, value in headers %}
+        <tr>
+            <td>{{key}}</td>
+            <td>{{value}}</td>
+        </tr>
+    {% endfor %}
+    </table>
+{% endblock %}
